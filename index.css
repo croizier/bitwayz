@@ -1,0 +1,108 @@
+svg {
+    border: solid gray;
+    background-color: beige;
+    display: block;
+    margin-bottom: 10px;
+}
+
+span {
+    margin: 2px;
+    background-color: beige;
+    font-size: 200%;
+    padding: 2px;
+}
+
+.p1 {
+    fill: var(--p1-bg);
+}
+
+.p2 {
+    fill: gray;
+}
+
+.p3 {
+    stroke: black;
+    stroke-width: 4px;
+}
+
+use:hover {
+    opacity: 0.8;
+}
+
+use {
+    --p1-bg: lightgray;
+    --i0: none;
+    --i1: none;
+    --o0: none;
+    --o1: none;
+    --gd: none;
+}
+
+use.no {
+    --i0: block;
+    --i1: block;
+}
+
+use.ol {
+    --i0: block;
+    --i1: block;
+    --o0: block;
+}
+
+use.or {
+    --i0: block;
+    --i1: block;
+    --o1: block;
+}
+
+use.ob {
+    --i0: block;
+    --i1: block;
+    --o0: block;
+    --o1: block;
+}
+
+use.bl {
+    --i0: block;
+    --i1: block;
+    --o0: block;
+    --o1: block;
+    --gd: block;
+    --ga: 0deg;
+}
+
+use.br {
+    --i0: block;
+    --i1: block;
+    --o0: block;
+    --o1: block;
+    --gd: block;
+    --ga: -90deg;
+}
+
+.p2.i0 {
+    display: var(--i0);
+}
+
+.p2.i1 {
+    display: var(--i1);
+}
+
+.p2.o0 {
+    display: var(--o0);
+}
+
+.p2.o1 {
+    display: var(--o1);
+}
+
+.p3 {
+    display: var(--gd);
+    transform: rotate(var(--ga));
+    transform-origin: 50% 65%;
+    /* transition: transform 0.5s ease 0.1s; */ /* Chrome bug */
+}
+
+.t1 {
+    fill: var(--tf);
+}
